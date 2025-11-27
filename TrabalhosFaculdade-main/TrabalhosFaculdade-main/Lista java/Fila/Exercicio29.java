@@ -25,7 +25,7 @@ public class Exercicio29 {
             switch (opcao) {
                 case 1:
                     System.out.print("Digite o nome do cliente: ");
-                    scanner.nextLine(); // Limpa o buffer
+                    scanner.nextLine(); 
                     String nome = scanner.nextLine();
                     System.out.print("Digite o problema: ");
                     String problema = scanner.nextLine();
@@ -88,7 +88,7 @@ class ChamadaSuporte implements Comparable<ChamadaSuporte> {
     
     @Override
     public int compareTo(ChamadaSuporte outra) {
-        // Prioridade maior (4) vem primeiro que prioridade menor (1)
+        
         return Integer.compare(outra.prioridade, this.prioridade);
     }
     
@@ -155,3 +155,4 @@ class SistemaSuporteTecnico {
         }
     }
 }
+
