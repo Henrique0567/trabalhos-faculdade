@@ -6,7 +6,7 @@ import java.util.Scanner;
 //mesa e são chamados quando uma mesa fica disponível.
 public class Exercicio28 {
     public static void main(String[] args) {
-        SistemaRestaurante restaurante = new SistemaRestaurante(5); // 5 mesas
+        SistemaRestaurante restaurante = new SistemaRestaurante(5); 
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("=== Sistema de Fila de Restaurante ===");
@@ -26,7 +26,7 @@ public class Exercicio28 {
             switch (opcao) {
                 case 1:
                     System.out.print("Digite o nome do cliente: ");
-                    scanner.nextLine(); // Limpa o buffer
+                    scanner.nextLine();
                     String nome = scanner.nextLine();
                     System.out.print("Digite o número de pessoas: ");
                     int pessoas = scanner.nextInt();
@@ -124,7 +124,7 @@ class SistemaRestaurante {
         filaEspera.offer(cliente);
         System.out.println("Cliente " + nome + " adicionado à fila com senha " + cliente.getSenha());
         
-        // Tenta alocar mesa imediatamente
+      
         alocarMesa();
     }
     
@@ -202,3 +202,4 @@ class SistemaRestaurante {
         }
     }
 }
+
